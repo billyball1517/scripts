@@ -5,7 +5,7 @@
 
 LOGFILE=/var/log/messages
 
-cp $LOGFILE $LOGFILE.old
+cp $LOGFILE $LOGFILE.messages.$(date +%d-%m-%y)
 cat /dev/null > $LOGFILE
 echo log file copied and cleaned up
 
